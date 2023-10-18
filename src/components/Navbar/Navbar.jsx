@@ -59,8 +59,8 @@ const Navbar = () => {
 );
 
 return (
-    <div>
-        <div className="flex justify-between items-center py-5 mx-10 px-10 shadow-lg">
+    <div className="">
+        <div className="rounded-lg flex justify-between items-center py-5 mx-10 px-10 shadow-lg">
   Name
   <div className="">
     <div className="navbar ">
