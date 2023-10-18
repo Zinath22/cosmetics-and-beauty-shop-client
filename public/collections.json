@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Perfume",
+      "position": "Event Coordinator",
+      "img": "https://i.ibb.co/wy6gpQy/amy-shamblen-xw-M61-TPMl-Yk-unsplash.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Lipsticks",
+      "position": "Marketing Manager",
+      "img": "https://i.ibb.co/3RRykFk/william-bout-TY4-QMCr-S6-P4-unsplash.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Make-up",
+      "position": "Logistics Coordinator",
+      "img": "https://i.ibb.co/41nwFh6/yixian-zhao-q7i-ZCOXGOWY-unsplash.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Shampoo",
+      "position": "Logistics Coordinator",
+      "img": "https://i.ibb.co/3c5Lfgb/jack-finnigan-rri-AI0nhcbc-unsplash.jpg"
+    }
+  ]
+  

@@ -2,6 +2,8 @@
 
 // import Banner from "../../components/Banner/Banner";
 import Products from "../../components/Products/Products";
+import Collections from "./Collections/Collections";
+import Contact from "./Contact/Contact";
 
 
 const Home = () => {
@@ -9,6 +11,8 @@ const Home = () => {
         <div className="px-10 mx-auto">
        {/* <Banner></Banner> */}
        <Products></Products>
+       <Collections></Collections>
+       <Contact></Contact>
         </div>
     );
 };
