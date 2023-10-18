@@ -1,4 +1,5 @@
 import { useContext, useRef, useState } from "react";
+import {  FaGoogle } from 'react-icons/fa';
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../Providers/AuthProvider";
@@ -150,8 +151,10 @@ const Login = () => {
               </form>
               <div className="divider">or</div>
               <div className="space-y-3">
-                <h4 onClick={handleGoogleLogin}
-                 className="cursor-pointer w-full bg-red-500 py-3 text-center rounded text-white">Login In With Google</h4>
+                <button onClick={handleGoogleLogin}
+                 className=" btn-outline btn w-full bg-red-500 py-3 text-center rounded text-white" >
+                    <FaGoogle></FaGoogle>
+                    Login In With Google</button>
               </div>
             </div>
          
