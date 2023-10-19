@@ -126,11 +126,11 @@ const Register = () => {
         <div>
                <div>
          
-         <p className=" text-center text-red-600">{error}</p>
-         <div className="w-full lg:w-1/2 my-10 mx-auto py-11 px-12 text-white font-bold" style={{ backgroundImage: 'linear-gradient(115deg, #FF6666, #FFFFFF)' }}>
-                         <h2 className="text-3xl mb-4">Register</h2>
-                         <p className="mb-4">
-                             Create your account. It&rsquo;s free and only takes a minute
+         <p className=" text-center text-purple-500">{error}</p>
+         <div className="w-full lg:w-1/2 my-10 mx-auto py-11 px-12 text-white font-bold bg-gradient-to-r from-purple-500 to-pink-500 " >
+                         <h2 className="text-2xl text-center mb-4">Register</h2>
+                         <p className="mb-4 text-lg text-center">
+                             Create your account.
                          </p>
                          <form 
                          onSubmit={handleRegister}
@@ -188,9 +188,9 @@ const Register = () => {
                                  </span>
                              </div> */}
                              <div className="mt-5">
-                                 <button className="w-full bg-red-500 py-3 text-center rounded text-white">Register Now</button>
+                                 <button className="w-full bg-gradient-to-r  from-pink-500 to-purple-500 py-3 text-center rounded text-white">Register Now</button>
                                  <p className="text-center mt-3">Already Have an Account? <Link to="/login">
-                                     <span className="btn-link font-medium text-red-500">Login</span>
+                                     <span className="btn-link font-medium text-white">Login</span>
                                  </Link>
                                  </p>
                              </div>

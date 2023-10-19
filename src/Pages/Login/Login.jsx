@@ -109,11 +109,11 @@ const Login = () => {
     return (
         <div>
              <div>
-      <p className="text-center text-red-600">{error}</p>
+      <p className="text-center text-purple-700">{error}</p>
       
           
-            <div className="lg:w-1/2 w-full  my-10 text-white font-bold mx-auto  py-10 px-12 " style={{ backgroundImage: 'linear-gradient(115deg, #FF6666, #FFFFFF)' }}>
-              <h2 className="text-3xl mb-4 text-center">Login</h2>
+            <div className="lg:w-1/2 w-full  my-10 text-white font-bold mx-auto  py-10 px-12 bg-gradient-to-r from-purple-500 to-pink-500 " >
+              <h2 className="text-3xl  mb-4 text-center">Login</h2>
               <p className="mb-4 text-center">
                 Welcome back! Login to your account for quick access.
               </p>
@@ -141,18 +141,18 @@ const Login = () => {
                 </div>
                 <div className="mt-5"></div>
                 <div className="mt-5">
-                  <button className="w-full bg-red-500 py-3 text-center rounded text-white">Login Now</button>
+                  <button className="w-full  bg-gradient-to-r from-pink-500 to-purple-500 py-3 text-center rounded text-white">Login Now</button>
                   <div className="flex text-sm justify-between items-center mt-5">
-                    <p className="tmt-2">New To The Website? <Link to={"/register"}><span className="btn-link font-medium text-red-500">Register</span></Link></p>
+                    <p className="tmt-2">New To The Website? <Link to={"/register"}><span className="btn-link font-medium text-white">Register</span></Link></p>
                     <p onClick={handleForgetPass}
-                    className="btn-link cursor-pointer" >Forgot password?</p>
+                    className="btn-link cursor-pointer text-white" >Forgot password?</p>
                   </div>
                 </div>
               </form>
-              <div className="divider">or</div>
-              <div className="space-y-3">
+              <div className="divider ">or</div>
+              <div className="space-y-3 ">
                 <button onClick={handleGoogleLogin}
-                 className=" btn-outline btn w-full bg-red-500 py-3 text-center rounded text-white" >
+                 className=" btn-outline btn w-full bg-gradient-to-r  from-pink-500 to-purple-500  py-3 text-center rounded text-white" >
                     <FaGoogle></FaGoogle>
                     Login In With Google</button>
               </div>
