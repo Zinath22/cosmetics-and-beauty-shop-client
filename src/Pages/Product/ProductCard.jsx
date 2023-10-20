@@ -1,14 +1,45 @@
-import { useLoaderData } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
-const ProductCard = () => {
 
-    const products = useLoaderData();
+
+const ProductCard = ({product}) => {
+
+    
+    const {_id, name, brand_name, type, price, description, rating, photo} = product;
 
     return (
         <div>
-        pp
+        
+        <div>
+           <div className="card card-side bg-base-100 shadow-xl">
+ <figure><img className=" mx-auto" src={photo} alt="Movie"/></figure>
+ <div className="justify-between  flex">
+ <div className="p-10">
+ <h2 className="card-title">{name}</h2>
+   <p>{type}</p>
+   <p>{price}</p>
+   <p>{rating}</p>
+ </div>
+   <div className="btn-group p-10 btn-group-vertical space-y-5 ">
+ {/* <button className="btn ">View</button> */}
+ <Link to={`/update/${_id}`}>
+ <button className="btn bg-purple-400">Update</button>
+ </Link>
+
+ <Link to={`/productDetail/${_id}`}>
+ <button 
+
+className="btn bg-purple-400">Details</button>
+ </Link>
+</div>
+</div>
+</div>
+     </div>
+          
+     
         </div>
+           
     );
 };
 
