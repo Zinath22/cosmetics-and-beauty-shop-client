@@ -47,7 +47,7 @@ const AddProducts = () => {
             <h2 className="text-3xl text-white justify-center text-center font-extrabold">Add a New Products</h2>
             <form onSubmit={handleAddProducts} >
                 {/* form name and quantity row  */}
-                <div className="md:flex gap-5">
+                <div className="flex md:flex-row flex-col gap-5">
                 <div className="form-control md:w-1/2">
   <label className="label">
     <span className="label-text text-xl text-white">Name</span>
@@ -57,7 +57,7 @@ const AddProducts = () => {
     <input type="text" name="name" placeholder="Enter products name" className="input input-bordered w-full" />
   </label>
 </div>
-                <div className="form-control w-1/2">
+                <div className="form-control w-full md:w-1/2">
   <label className="label">
     <span className="label-text text-white text-xl">Brand Name</span>
   </label>
@@ -69,7 +69,7 @@ const AddProducts = () => {
                 </div>
 
                 {/* form supplier row  */}
-                <div className="flex   gap-5">
+                <div className="flex md:flex-row flex-col   gap-5">
                 <div className="form-control md:w-1/2">
   <label className="label">
     <span className="label-text text-xl text-white">Type</span>
@@ -79,7 +79,7 @@ const AddProducts = () => {
     <input type="text" name="type" placeholder="Enter coffee Type" className="input input-bordered w-full" />
   </label>
 </div>
-                <div className="form-control w-1/2">
+                <div className="form-control w-full md:w-1/2">
   <label className="label">
     <span className="label-text text-xl text-white">Description</span>
   </label>
@@ -91,7 +91,7 @@ const AddProducts = () => {
                 </div>
 
                 {/* form category and details  row */}
-                <div className="md:flex gap-5">
+                <div className="flex md:flex-row flex-col  gap-5">
                 <div className="form-control md:w-1/2">
   <label className="label">
     <span className="label-text text-xl text-white">Rating</span>
@@ -101,7 +101,7 @@ const AddProducts = () => {
     <input type="text" name="rating" placeholder="Enter rating" className="input input-bordered w-full" />
   </label>
 </div>
-                <div className="form-control w-1/2">
+                <div className="form-control w-full md:w-1/2">
   <label className="label">
     <span className="label-text text-xl text-white">Price</span>
   </label>

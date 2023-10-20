@@ -21,29 +21,27 @@ const Navbar = () => {
 
   const navLinks = (
     <>
-    <li>
+    <li className="text-purple-500">
         <NavLink to = "/">Home</NavLink>
     </li>
-    <li>
+    <li className="text-purple-500">
         <NavLink to = "/addProducts">Add Product</NavLink>
     </li>
-    <li>
+    <li className="text-purple-500">
         <NavLink to = "/myCart">My Cart</NavLink>
     </li>
-    <li>
-        {/* <NavLink to = "/login">Login</NavLink> */}
-    </li>
-    <li>
+    <li className="text-purple-500">
         <NavLink to = "/register">Register</NavLink>
     </li>
 
     {
       user? (
       <>
-        <li>
+        <li className="text-purple-500">
           <span className="btn m-2">{user.email}</span>
         </li>
-        <li onClick={handleSignOut}>
+        <li className="text-purple-500"
+         onClick={handleSignOut}>
           <span>sign Out</span>
           </li>
           </>
@@ -61,7 +59,10 @@ const Navbar = () => {
 return (
     <div className="">
         <div className="rounded-lg flex justify-between items-center py-5 mx-10 px-10 shadow-lg">
-  Name
+ 
+  {/* <img className="w-[60px] rounded-full" src="https://i.ibb.co/ckTTpcX/laura-chouette-bz-PJm3v8-RWk-unsplash-1.jpg" alt="" /> */}
+ <h2 className="text-purple-500 text-2xl">Glamour & Grace</h2>
+
   <div className="">
     <div className="navbar ">
       <div className="navbar-start">

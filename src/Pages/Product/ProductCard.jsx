@@ -9,12 +9,12 @@ const ProductCard = ({product}) => {
     const {_id, name, brand_name, type, price, description, rating, photo} = product;
 
     return (
-        <div>
         
-        <div>
-           <div className="card card-side bg-base-100 shadow-xl">
- <figure><img className=" mx-auto" src={photo} alt="Movie"/></figure>
- <div className="justify-between  flex">
+        
+        
+           <div className=" flex md:flex-row flex-col bg-base-100 shadow-xl">
+ <figure><img className="md:w-[250px] w-full h-screen md:h-[250px] " src={photo} alt="Movie"/></figure>
+ <div className="justify-between  flex ">
  <div className="p-10">
  <h2 className="card-title">{name}</h2>
    <p>{type}</p>
@@ -35,10 +35,9 @@ className="btn bg-purple-400">Details</button>
 </div>
 </div>
 </div>
-     </div>
+    
           
      
-        </div>
            
     );
 };
