@@ -3,6 +3,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import Logo from "../Logo/Logo";
 
 
 const Navbar = () => {
@@ -59,7 +60,7 @@ const Navbar = () => {
 return (
     <div className="">
         <div className="rounded-lg flex justify-between items-center py-5 mx-10 px-10 shadow-lg">
- 
+   <Logo></Logo>
   {/* <img className="w-[60px] rounded-full" src="https://i.ibb.co/ckTTpcX/laura-chouette-bz-PJm3v8-RWk-unsplash-1.jpg" alt="" /> */}
  <h2 className="text-purple-500 text-2xl">Glamour & Grace</h2>
 

@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 const Update = () => {
     const product = useLoaderData();
 
-    const {_id, name, brand_name, type, price, description, rating, photo} = product;
+    const {_id, name, brand_name, type, price,  rating, photo} = product;
 
     const handleUpdateProduct = event =>{
         event.preventDefault();
@@ -16,11 +16,11 @@ const Update = () => {
         const brand_name = form.brand_name.value;
         const type = form.type.value;
         const price = form.price.value;
-        const description = form.description.value;
+        // const  = form..value;
         const rating = form.rating.value;
         const photo = form.photo.value;
 
-        const updatedProduct = {name, brand_name, type, price, description, rating, photo}
+        const updatedProduct = {name, brand_name, type, price,  rating, photo}
         console.log(updatedProduct)
         // fetch('http://localhost:5000/product',
         // send data to the server
@@ -52,7 +52,7 @@ const Update = () => {
          <h2 className="text-3xl text-white justify-center text-center font-extrabold">Update a  Product</h2>
          <form onSubmit={handleUpdateProduct} >
              {/* form name and quantity row  */}
-             <div className="md:flex gap-5">
+             <div className="flex md:flex-row flex-col gap-5">
              <div className="form-control md:w-1/2">
 <label className="label">
  <span className="label-text text-xl text-white">Name</span>
@@ -62,7 +62,7 @@ const Update = () => {
  <input type="text" name="name" defaultValue={name} placeholder="Enter products name" className="input input-bordered w-full" />
 </label>
 </div>
-             <div className="form-control w-1/2">
+             <div className="form-control w-full md:w-1/2">
 <label className="label">
  <span className="label-text text-white text-xl">Brand Name</span>
 </label>
@@ -74,7 +74,7 @@ const Update = () => {
              </div>
 
              {/* form supplier row  */}
-             <div className="flex   gap-5">
+             <div className="flex md:flex-row flex-col  gap-5">
              <div className="form-control md:w-1/2">
 <label className="label">
  <span className="label-text text-xl text-white">Type</span>
@@ -84,7 +84,7 @@ const Update = () => {
  <input type="text" name="type" defaultValue={type} placeholder="Enter coffee Type" className="input input-bordered w-full" />
 </label>
 </div>
-<div className="form-control md:w-1/2">
+<div className="form-control w-full md:w-1/2">
 <label className="label">
  <span className="label-text text-xl text-white">Rating</span>
 </label>
@@ -97,9 +97,9 @@ const Update = () => {
              </div>
 
              {/* form category and details  row */}
-             <div className="md:flex gap-5 ">
+             <div className="flex md:flex-row flex-col gap-5 ">
    
-             <div className="form-control w-1/2">
+             <div className="form-control w-full md:w-1/2">
 <label className="label">
  <span className="label-text text-xl text-white">Price</span>
 </label>
@@ -109,7 +109,7 @@ const Update = () => {
 </label>
 </div>
 {/* photo  */}
-<div className="form-control w-1/2">
+<div className="form-control w-full md:w-1/2">
            
 <label className="label">
  <span className="label-text  text-xl text-white">Photo</span>

@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 
+
 const ProductDetails = () => {
     const product = useLoaderData();
     console.log(product);
@@ -51,8 +52,10 @@ const ProductDetails = () => {
     };
 
     return (
-        <div className="py-28">
-            <div className="card lg:card-side bg-base-100 w-10/12 mx-auto shadow-xl">
+
+      
+        <div className="py-28 px-10  ">
+            <div className="card  lg:card-side bg-base-100 w-12/10    shadow-xl">
                 <img className="h-[70vh]" src={photo} alt={name} />
                 <div className="card-body">
                     <h2 className="card-title text-2xl">{name}</h2>
@@ -62,7 +65,7 @@ const ProductDetails = () => {
                     <p>{rating}</p>
                     <p className="font-semibold">{description}</p>
                     <div className="card-actions">
-                        <button className="btn btn-accent text-white" onClick={addToCart}>
+                        <button className="btn bg-purple-500 text-white" onClick={addToCart}>
                             Cart
                         </button>
                     </div>

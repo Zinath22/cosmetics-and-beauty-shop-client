@@ -16,9 +16,9 @@ const ProductCard = ({product}) => {
  <figure><img className="md:w-[250px] w-full h-screen md:h-[250px] " src={photo} alt="Movie"/></figure>
  <div className="justify-between  flex ">
  <div className="p-10">
- <h2 className="card-title">{name}</h2>
-   <p>{type}</p>
-   <p>{price}</p>
+ <h2 className="card-title">Name:{name}</h2>
+   <p>Type:{type}</p>
+   <p>Price: ${price}</p>
    <p>{rating}</p>
  </div>
    <div className="btn-group p-10 btn-group-vertical space-y-5 ">

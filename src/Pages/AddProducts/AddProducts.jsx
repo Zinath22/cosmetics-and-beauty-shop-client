@@ -76,7 +76,7 @@ const AddProducts = () => {
   </label>
   <label className="input-group">
    
-    <input type="text" name="type" placeholder="Enter coffee Type" className="input input-bordered w-full" />
+    <input type="text" name="type" placeholder=" Type" className="input input-bordered w-full" />
   </label>
 </div>
                 <div className="form-control w-full md:w-1/2">
