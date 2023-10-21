@@ -43,12 +43,12 @@ const Navbar = () => {
         </li>
         <li className="text-purple-500"
          onClick={handleSignOut}>
-          <span>sign Out</span>
+          <span>Sign Out</span>
           </li>
           </>
        
       ) : (
-        <li>
+        <li className="text-purple-500">
           <Link to = "/login">Login</Link>
         </li>
       )

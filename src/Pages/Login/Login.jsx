@@ -145,6 +145,7 @@ const Login = () => {
                   <div className="flex text-sm justify-between items-center mt-5">
                     <p className="tmt-2">New To The Website? <Link to={"/register"}><span className="btn-link font-medium text-white">Register</span></Link></p>
                     <p onClick={handleForgetPass}
+                   
                     className="btn-link cursor-pointer text-white" >Forgot password?</p>
                   </div>
                 </div>

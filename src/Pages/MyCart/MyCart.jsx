@@ -8,6 +8,7 @@ import Swal from 'sweetalert2';
 const MyCart = () => {
    
     const loadedProducts = useLoaderData()
+
     console.log(loadedProducts);
     
     // const {_id, brand_name, description, name, photo, price, rating, type, } = product;
@@ -58,12 +59,12 @@ const MyCart = () => {
                             <figure><img src={product.photo} alt="Album" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">{product.name}</h2>
-                                <p>{product.price}</p>
+                                <p>Price: {product.price}$</p>
                                 <p>{product.rating}</p>
                                 <div className="card-actions justify-end">
                                     <button 
                                     onClick={() => handleDelete(product._id)}
-                                    className="btn btn-primary">Delete</button>
+                                    className="btn bg-purple-500 btn-primary">Delete</button>
                                 </div>
                             </div>
                         </div>

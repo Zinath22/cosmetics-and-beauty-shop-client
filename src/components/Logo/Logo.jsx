@@ -3,7 +3,7 @@
 const Logo = () => {
     return (
         <div>
-            <img className="w-[100px] h-[60px] rounded-full" src="https://i.ibb.co/9qYPX39/Store.webp" alt="" />
+            <img className="w-[120px] h-[80px] rounded-full" src="https://i.ibb.co/YbWRcZn/NavLogo.jpg" alt="" />
         </div>
     );
 };
