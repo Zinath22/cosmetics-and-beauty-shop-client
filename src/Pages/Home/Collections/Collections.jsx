@@ -21,7 +21,7 @@ const Collections = () => {
      
      <div className="py-10 mx-auto  ">
       
-          <div>
+          <div className="flex">
               
               {
                         collections?.map(collection =>(

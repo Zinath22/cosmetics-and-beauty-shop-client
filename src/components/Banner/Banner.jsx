@@ -7,7 +7,7 @@ const Banner = () => {
     return (
         // <div className="">
           
-             <div className="pb-10 ">
+             <div className="pb-10 " >
 
 
 <div>

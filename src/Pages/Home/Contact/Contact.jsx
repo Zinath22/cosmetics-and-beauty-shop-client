@@ -10,7 +10,7 @@ const Contact = () => {
    <div className="flex flex-col md:flex-row justify-evenly mx-auto  text-center items-center">
 
    <div className="  ">
-    <h1 className="text-purple-500 text-3xl mb-5">Contact Us</h1>
+    <h1 className="text-purple-500 text-3xl mb-5 " >Contact Us</h1>
       <h1 className="text-2xl text-purple-500 mb-2" data-aos="flip-left">phone </h1>
       <p className="" data-aos="flip-left">+0999911</p>
       <h1 className="text-2xl text-purple-500" data-aos="flip-left">Email</h1>

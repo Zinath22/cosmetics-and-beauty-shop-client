@@ -1,66 +1,86 @@
 
 
 
-
+import { useState } from 'react';
+import { BsFillStarFill } from 'react-icons/Bs';
 import { useLoaderData } from 'react-router-dom';
-import Swal from 'sweetalert2';
+// import Swal from 'sweetalert2';
 
 const MyCart = () => {
    
     const loadedProducts = useLoaderData()
 
-    console.log(loadedProducts);
-    
-    // const {_id, brand_name, description, name, photo, price, rating, type, } = product;
-
-    // const [products , setProductes] = useState(loadedProducts)
+    // console.log(loadedProducts);
+    const [products, setProducts] = useState(loadedProducts);
+  
    
-    const handleDelete = (_id) => {
-  console.log(_id);
-  Swal.fire({
-    title: 'Are you sure?',
-    text: "You won't be able to revert this!",
-    icon: 'warning',
-    showCancelButton: true,
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
-    confirmButtonText: 'Yes, delete it!'
-  }).then((result) => {
-    if (result.isConfirmed) {
-     
-        fetch(`http://localhost:5000/product/${_id}`,{
+    const handleDelete = id => {
+      console.log(id);
+      fetch(`http://localhost:5000/cart/${id}`, {
         method: 'DELETE'
       })
       .then(res => res.json())
       .then(data => {
-        console.log(data);
-        if(data.deletedCount > 0 ){
-            Swal.fire(
-                'Deleted!',
-                'Your cart has been deleted.',
-                'success'
-              )
-            //   const remaining = products.filter(prod => prod._id !== _id);
-            //   setProducts(remaining);
+        if(data.deletedCount > 0){
+          console.log('delete');
+
+          const remainingProducts = products.filter(product => product._id !== id);
+          setProducts(remainingProducts);
         }
       })
 
-    }
-  })
+
+
+
+      
+      // previous code 
+
+
+  // console.log(_id);
+  // Swal.fire({
+  //   title: 'Are you sure?',
+  //   text: "You won't be able to revert this!",
+  //   icon: 'warning',
+  //   showCancelButton: true,
+  //   confirmButtonColor: '#3085d6',
+  //   cancelButtonColor: '#d33',
+  //   confirmButtonText: 'Yes, delete it!'
+  // }).then((result) => {
+  //   if (result.isConfirmed) {
+     
+  //       fetch(`http://localhost:5000/cart/${_id}`,{
+  //       method: 'DELETE'
+  //     })
+  //     .then(res => res.json())
+  //     .then(data => {
+  //       console.log(data);
+  //       if(data.deletedCount > 0 ){
+  //           Swal.fire(
+  //               'Deleted!',
+  //               'Your cart has been deleted.',
+  //               'success'
+  //             )
+  //           //   const remaining = products.filter(prod => prod._id !== _id);
+  //           //   setProducts(remaining);
+  //       }
+  //     })
+
+  //   }
+  // })
     }
 
 
     return (
-        <div className='grid p-10 gap-4 grid-cols-3'>
+        <div className='grid  p-10 gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3' >
             {
-              loadedProducts.map(product => 
+              products.map(product => 
                      <div key={product._id}> 
-                        <div className="card lg:card-side bg-base-100 shadow-xl">
-                            <figure><img src={product.photo} alt="Album" /></figure>
+                        <div className="card lg:card-side bg-base-100 shadow-xl" >
+                            <figure><img className='h-[200px] w-[200px] ' src={product.photo} alt="Album" /></figure>
                             <div className="card-body">
-                                <h2 className="card-title">{product.name}</h2>
+                                <h2 className="card-title" >{product.name}</h2>
                                 <p>Price: {product.price}$</p>
-                                <p>{product.rating}</p>
+                                <p className='flex items-center gap-2 '><span className='text-yellow-400'><BsFillStarFill></BsFillStarFill></span> {product.rating}</p>
                                 <div className="card-actions justify-end">
                                     <button 
                                     onClick={() => handleDelete(product._id)}

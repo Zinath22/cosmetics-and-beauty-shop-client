@@ -1,7 +1,7 @@
 // import React from 'react';
 
 import { Link } from "react-router-dom";
-
+import PropTypes from 'prop-types'; 
 
 
 
@@ -56,5 +56,8 @@ const ProductsCard = ({product}) => {
         
     );
 };
+ProductsCard.propTypes ={
+  product: PropTypes.object
+}
 
 export default ProductsCard;

@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
-
+import { BsFillStarFill } from 'react-icons/Bs';
 
 const ProductDetails = () => {
     const product = useLoaderData();
@@ -62,7 +62,7 @@ const ProductDetails = () => {
                     <h3 className="text-lg font-semibold">{brand_name}</h3>
                     <h3 className="font-semibold">{type}</h3>
                     <h3 className="font-semibold">$ {price}</h3>
-                    <p>{rating}</p>
+                    <p className="flex items-center gap-2"><span className="text-yellow-400"><BsFillStarFill></BsFillStarFill></span>{rating}</p>
                     <p className="font-semibold">{description}</p>
                     <div className="card-actions">
                         <button className="btn bg-purple-500 text-white" onClick={addToCart}>
