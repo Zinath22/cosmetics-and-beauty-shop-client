@@ -4,6 +4,7 @@
 import { useState } from 'react';
 import { BsFillStarFill } from 'react-icons/Bs';
 import { useLoaderData } from 'react-router-dom';
+import Swal from 'sweetalert2';
 // import Swal from 'sweetalert2';
 
 const MyCart = () => {
@@ -16,23 +17,42 @@ const MyCart = () => {
    
     const handleDelete = id => {
       console.log(id);
+
+      Swal.fire({
+          title: 'Are you sure?',
+          text: "You won't be able to revert this!",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+         if (result.isConfirmed) {
+
       fetch(`http://localhost:5000/cart/${id}`, {
         method: 'DELETE'
       })
       .then(res => res.json())
       .then(data => {
-        if(data.deletedCount > 0){
-          console.log('delete');
+         console.log(data);
+        
+         
+            
+          if(data.deletedCount > 0 ){
+                      Swal.fire(
+                          'Deleted!',
+                          'Your cart has been deleted.',
+                          'success'
+                        )
 
           const remainingProducts = products.filter(product => product._id !== id);
           setProducts(remainingProducts);
-        }
-      })
+                      }
+                    })
+                  }
+                })
+    }
 
-
-
-
-      
       // previous code 
 
 
@@ -67,7 +87,7 @@ const MyCart = () => {
 
   //   }
   // })
-    }
+    
 
 
     return (
