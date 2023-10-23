@@ -93,9 +93,13 @@ const MyCart = () => {
     return (
         <div className='grid  p-10 gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3' >
             {
+              products.length === 0 ? (
+               <div className=' justify-center items-center'> 
+               <p className='text-2xl text-center  '>No data found</p></div>
+              ) :
               products.map(product => 
                      <div key={product._id}> 
-                        <div className="card lg:card-side bg-base-100 shadow-xl" >
+                     .   <div className="card lg:card-side bg-base-100 shadow-xl" >
                             <figure><img className='h-[200px] w-[200px] ' src={product.photo} alt="Album" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title" >{product.name}</h2>
