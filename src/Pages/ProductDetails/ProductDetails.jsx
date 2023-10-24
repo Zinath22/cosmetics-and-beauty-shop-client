@@ -38,7 +38,7 @@ const ProductDetails = () => {
                 if(data.insertedId){
                     Swal.fire({
                         title: ' Success',
-                        text: 'User addedd successfully',
+                        text: 'Product addedd successfully',
                         icon: 'success',
                         confirmButtonText: 'OKk'
                     })
@@ -65,7 +65,7 @@ const ProductDetails = () => {
                     <p className="flex items-center gap-2"><span className="text-yellow-400"><BsFillStarFill></BsFillStarFill></span>{rating}</p>
                     <p className="font-semibold">{description}</p>
                     <div className="card-actions">
-                        <button className="btn bg-purple-500 text-white" onClick={addToCart}>
+                        <button className="btn bg-pink-600 text-black" onClick={addToCart}>
                             Cart
                         </button>
                     </div>

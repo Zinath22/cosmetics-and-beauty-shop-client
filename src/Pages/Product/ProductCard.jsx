@@ -81,10 +81,10 @@ const ProductCard = ({ product }) => {
 </div>
 <div className="btn-group gap-5 mb-5 mt-5  p-5 btn-group-horizontal">
     <Link to={`/update/${_id}`}>
-        <button className="btn bg-purple-400">Update</button>
+        <button className="btn bg-pink-600 text-black">Update</button>
     </Link>
     <Link to={`/productDetail/${_id}`}>
-        <button className="btn bg-purple-400">Details</button>
+        <button className="btn bg-pink-600 text-black">Details</button>
     </Link>
 </div>
 </div>

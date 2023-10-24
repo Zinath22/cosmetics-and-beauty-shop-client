@@ -5,11 +5,11 @@
     "cart_title": "Our Events",
     "banner_img": "https://i.ibb.co/X8Ytc63/banner.jpg",
     "logo_img": "https://i.ibb.co/qBMcH2k/logo.webp",
-    "card_img": "https://i.ibb.co/z53c59p/samia-liamani-shtjk2hfi-CE-unsplash.jpg",
+    "card_img": "https://i.ibb.co/tqn6cwg/d.webp",
     "team_img": "https://i.ibb.co/C7vPW19/member3.png",
     "team_name": "Habiba Hossain",
-    "price": 20,
-    "description": "We arrange your event Stage Decoration, Lighting, Photography, Cinematography "
+    "price": 20
+    
   },
     {
     "id": 2,
@@ -17,11 +17,11 @@
     "cart_title": "Our Events",
     "banner_img": "https://i.ibb.co/X8Ytc63/banner.jpg",
     "logo_img": "https://i.ibb.co/qBMcH2k/logo.webp",
-    "card_img": "https://i.ibb.co/3RRykFk/william-bout-TY4-QMCr-S6-P4-unsplash.jpg",
+    "card_img": "https://i.ibb.co/pJyTRNX/UD.png",
     "team_img": "https://i.ibb.co/4TQ70Vm/member2.png",
     "team_name": "Habiba Hossain",
-    "price": 10,
-    "description": "We arrange your event Stage Decoration, Lighting, Photography, Cinematography"
+    "price": 10
+    
   },
     {
     "id": 3,
@@ -32,8 +32,8 @@
     "card_img": "https://i.ibb.co/41nwFh6/yixian-zhao-q7i-ZCOXGOWY-unsplash.jpg",
     "team_img": "https://i.ibb.co/19d2XGf/member1.png",
     "team_name": "Ahsan Hossain",
-    "price": 30,
-    "description": "We arrange your event Stage Decoration, Lighting, Photography, Cinematography"
+    "price": 30
+
   },
     {
     "id": 4,
@@ -41,11 +41,11 @@
     "cart_title": "Our Events",
     "banner_img": "https://i.ibb.co/X8Ytc63/banner.jpg",
     "logo_img": "https://i.ibb.co/qBMcH2k/logo.webp",
-    "card_img": "https://i.ibb.co/pyhZ7v7/pexels-alena-chuyankova-13019048.jpg",
+    "card_img": "https://i.ibb.co/FYFRXZs/mac.webp",
     "team_img": "https://i.ibb.co/C7vPW19/member3.png",
     "team_name": "Ahsan Hossain",
-    "price": 20,
-    "description": "We arrange your event Stage Decoration, Lighting, Photography, Cinematography, birthday cake"
+    "price": 20
+    
   },
     {
     "id": 5,
@@ -56,8 +56,8 @@
     "card_img": "https://i.ibb.co/jTpgLhZ/laura-chouette-zrtov5-GAug-E-unsplash.jpg",
     "team_img": "https://i.ibb.co/C7vPW19/member3.png",
     "team_name": "Adil Hossain",
-    "price": 10,
-    "description": "We arrange your event Stage Decoration, Lighting, Photography, Cinematography."
+    "price": 10
+    
   },
     {
     "id": 6,
@@ -68,8 +68,8 @@
     "card_img": "https://i.ibb.co/7jgvJJ4/pexels-behrouz-alimardani-10644997.jpg",
     "team_img": "https://i.ibb.co/C7vPW19/member3.png",
     "team_name": "Adil Hossain",
-    "price": 15,
-    "description": "We arrange your event Stage Decoration, Lighting, Photography, Cinematography."
+    "price": 15
+   
   }
 ]
   

@@ -2,7 +2,7 @@
 
 
 import { useState } from 'react';
-import { BsFillStarFill } from 'react-icons/Bs';
+// import { BsFillStarFill } from 'react-icons/Bs';
 import { useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2';
 // import Swal from 'sweetalert2';
@@ -104,7 +104,7 @@ const MyCart = () => {
                             <div className="card-body">
                                 <h2 className="card-title" >{product.name}</h2>
                                 <p>Price: {product.price}$</p>
-                                <p className='flex items-center gap-2 '><span className='text-yellow-400'><BsFillStarFill></BsFillStarFill></span> {product.rating}</p>
+                                {/* <p className='flex items-center gap-2 '><span className='text-yellow-400'><BsFillStarFill></BsFillStarFill></span> {product.rating}</p> */}
                                 <div className="card-actions justify-end">
                                     <button 
                                     onClick={() => handleDelete(product._id)}

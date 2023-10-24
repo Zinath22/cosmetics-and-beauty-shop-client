@@ -17,7 +17,7 @@ const Banner = () => {
 
 
 <div>
-
+{/* <img className="w-full" src="https://i.ibb.co/X2GVR0b/download-3.jpg" alt="" /> */}
 <img src="https://i.ibb.co/fGNjtvj/kina-2-Ft-TEfxn-i-A-unsplash.jpg" alt="" /> 
 {/* <h1>Best Seller Product</h1> */}
 {/* <div className="absolute inset-0 bg-opacity-70  z-10"></div> */}

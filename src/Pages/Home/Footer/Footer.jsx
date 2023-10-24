@@ -6,7 +6,7 @@ const Footer = () => {
           <p className=" text-purple-500 font-bold" data-aos="flip-left">
           Glamour & Grace<br/> 
           </p> 
-          <p data-aos="flip-left">Copyright © 2023 - All right reserved</p>
+          <p className="text-purple-500" data-aos="flip-left ">Copyright © 2023 - All right reserved</p>
         </aside> 
         <nav>
           <div className="grid grid-flow-col gap-4">
