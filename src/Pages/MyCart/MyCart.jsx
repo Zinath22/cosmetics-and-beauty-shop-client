@@ -29,7 +29,7 @@ const MyCart = () => {
         }).then((result) => {
          if (result.isConfirmed) {
 
-      fetch(`http://localhost:5000/cart/${id}`, {
+      fetch(` https://cosmetics-and-beauty-shop-server-qtz8ah04o-zs-projects-044bf02e.vercel.app/cart/${id}`, {
         method: 'DELETE'
       })
       .then(res => res.json())
@@ -68,7 +68,7 @@ const MyCart = () => {
   // }).then((result) => {
   //   if (result.isConfirmed) {
      
-  //       fetch(`http://localhost:5000/cart/${_id}`,{
+  //       fetch(`  https://cosmetics-and-beauty-shop-server-qtz8ah04o-zs-projects-044bf02e.vercel.app/cart/${_id}`,{
   //       method: 'DELETE'
   //     })
   //     .then(res => res.json())
@@ -148,7 +148,7 @@ export default MyCart;
 //   }).then((result) => {
 //     if (result.isConfirmed) {
       
-//     fetch(`http://localhost:5000/cart/${_id}`, {
+//     fetch(`  https://cosmetics-and-beauty-shop-server-qtz8ah04o-zs-projects-044bf02e.vercel.app/cart/${_id}`, {
 //       method: 'DELETE'
 //     })
 //     .then(res => res.json())

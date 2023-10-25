@@ -5,7 +5,7 @@ import { BsFillStarFill } from 'react-icons/Bs';
 const ProductDetails = () => {
     const product = useLoaderData();
     console.log(product);
-    const { brand_name, description, name, photo, price, rating, type, _id } = product;
+    const { brand_name, description, name, photo, price, rating, type } = product;
 
     const addToCart = async () => {
         // Create the data to send to the server
@@ -17,7 +17,7 @@ const ProductDetails = () => {
             // Add other relevant data here
         };
 
-        fetch("http://localhost:5000/cart", {
+        fetch(" https://cosmetics-and-beauty-shop-server-qtz8ah04o-zs-projects-044bf02e.vercel.app/cart", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

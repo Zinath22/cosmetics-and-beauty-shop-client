@@ -36,29 +36,29 @@ const Routes = createBrowserRouter([
         {
             path: '/myCart',
             element:<PrivateRoute><MyCart></MyCart> </PrivateRoute>,
-            loader:() => fetch('http://localhost:5000/cart')
+            loader:() => fetch('  https://cosmetics-and-beauty-shop-server-qtz8ah04o-zs-projects-044bf02e.vercel.app/cart')
           },
        
         {
           path: '/products/:id',
           element: <Product></Product>,
-          loader: () => fetch('http://localhost:5000/product')
+          loader: () => fetch('  https://cosmetics-and-beauty-shop-server-qtz8ah04o-zs-projects-044bf02e.vercel.app/product')
         },
        
         {
          path: '/update/:id',
          element: <PrivateRoute> <Update></Update></PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
+        loader: ({params}) => fetch(`  https://cosmetics-and-beauty-shop-server-qtz8ah04o-zs-projects-044bf02e.vercel.app/product/${params.id}`)
         },
         // {
         //     path: '/productDetail/:id',
         //     element: <ProductDetails></ProductDetails>,
-        //     loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
+        //     loader: ({params}) => fetch(`  https://cosmetics-and-beauty-shop-server-qtz8ah04o-zs-projects-044bf02e.vercel.app/product/${params.id}`)
         // },
         {
             path:'/productDetail/:id',
             element: <PrivateRoute><ProductDetails></ProductDetails> </PrivateRoute>,
-            loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
+            loader: ({params}) => fetch(`  https://cosmetics-and-beauty-shop-server-qtz8ah04o-zs-projects-044bf02e.vercel.app/product/${params.id}`)
         },
         {
             path: '/login',

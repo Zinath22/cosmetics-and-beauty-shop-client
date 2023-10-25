@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { BsFillStarFill } from 'react-icons/Bs';
 
 const ProductCard = ({ product }) => {
-    const { _id, name, brand_name, type, price, description, rating, photo } = product;
+    const { _id, name, brand_name,  type, price,  rating, photo } = product;
 
     return (
       <div className="bg-base-100 shadow-xl rounded-lg">
@@ -14,7 +14,8 @@ const ProductCard = ({ product }) => {
 <img className="w-full h-[200px] md:w-[40%]" src={photo} alt="" />
 
 <div className="p-4 flex-grow">
-    <h2 className="card-title">Name: {name}</h2>
+    <h2 className="card-title">{name}</h2>
+    <h2 className="text-2xl font-semibold">{brand_name}</h2>
     <p>Type: {type}</p>
     <p>Price: ${price}</p>
     <p className="flex items-center gap-2">

@@ -145,7 +145,7 @@ const Register = () => {
                                      name="name"
                                      placeholder="Name"
                                      required
-                                     className="input rounded  w-full" />
+                                     className="input text-white rounded  w-full" />
                              </div>
                              <div className="mt-5">
                              <label className="label">
@@ -156,7 +156,7 @@ const Register = () => {
                                      name="email"
                                      placeholder="Email"
                                      required
-                                     className="input rounded  w-full" />
+                                     className="input text-white  rounded  w-full" />
                              </div>
                              <div className="mt-5">
                              <label className="label">
@@ -167,7 +167,7 @@ const Register = () => {
                                      name="password"
                                      placeholder="Password"
                                      required
-                                     className="input rounded  w-full" />
+                                     className="input text-white  rounded  w-full" />
                              </div>
                              <div className="mt-5">
                                  <input
@@ -175,7 +175,7 @@ const Register = () => {
                                      name="confirmPassword"
                                      placeholder="Confirm Password"
                                      required
-                                     className="input rounded  w-full" />
+                                     className="input text-white  rounded  w-full" />
                              </div>
                              {/* <div className="mt-5">
                                  <input

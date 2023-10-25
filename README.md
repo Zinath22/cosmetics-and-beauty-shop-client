@@ -1,4 +1,11 @@
+
+live Link :  https://cosmetics-and-beauty-shop.web.app
+
+website name: Glamour & Grace
+
+
 # React + Vite
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

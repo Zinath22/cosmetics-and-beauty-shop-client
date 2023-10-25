@@ -22,9 +22,9 @@ const Update = () => {
 
         const updatedProduct = {name, brand_name, type, price,  rating, photo}
         console.log(updatedProduct)
-        // fetch('http://localhost:5000/product',
+        // fetch('  https://cosmetics-and-beauty-shop-server-qtz8ah04o-zs-projects-044bf02e.vercel.app/product',
         // send data to the server
-        fetch(`http://localhost:5000/product/${_id}`, {
+        fetch(`  https://cosmetics-and-beauty-shop-server-qtz8ah04o-zs-projects-044bf02e.vercel.app/product/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
