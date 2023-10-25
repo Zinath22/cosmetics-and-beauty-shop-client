@@ -15,7 +15,10 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
+
+
 <!-- My Ptoject Feature  -->
+
 1. In my project home page there are 6 card.when we will click a card this card will go produc page where there are a slider and some card which are import form database.
 
 2. In add product page we can added product.For this u have to complete your register and login .cause it is a private
